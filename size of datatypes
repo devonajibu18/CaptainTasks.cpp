@@ -9,3 +9,69 @@ int main()
 	cout<<"Size of double:8 bytes"<<"\n";
 	return 0;
 }
+
+
+OR
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    char dtype;
+    cout<<"Enter the 'DATATYPE' whose size is to be determined(char,int,float,double): ";
+    cin>>dtype;
+    if(dtype = 'int')
+    {
+    	cout<<"Size of int datatype = 4 bytes";
+	}
+	else if(dtype = 'char')
+	{
+		cout<<"Size of char datatype = 1 byte";
+	}
+	else if(dtype = 'float')
+	{
+		cout<<"Size of float datatype = 4 bytes";
+	}
+	else if(dtype = 'double')
+	{
+		cout<<"Size of double datatype = 8 bytes";
+	}
+	else
+	{
+		cout<<"ERROR!!";
+	}
+	return 0;
+}
+
+
+OR
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    char dtype;
+    cout<<"Enter the 'DATATYPE' whose size is to be determined:\n1.int \n2.char \n3.float \n4.double \n ";
+    cin>>dtype;
+    switch(dtype)
+    {
+    	case 1:
+    		cout<<"Size of int datatype = 4 bytes";
+    		break;
+    	case 2:
+    		cout<<"Size of char datatype = 1 byte";
+    		break;
+		case 3:
+    		cout<<"Size of float datatype = 4 bytes";
+    		break;
+		case 4:
+    		cout<<"Size of double datatype = 8 bytes";
+    		break;			
+	}
+	return 0;
+}
+
+
+
