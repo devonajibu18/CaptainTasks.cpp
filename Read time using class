@@ -1,0 +1,48 @@
+#include<iostream>
+using namespace std;
+class time
+{
+	private:
+		int hr;
+		int min;
+		int sec;
+		int total_sec;
+	public:
+		entervalues();
+		valueprocess();
+		displaydata();
+};
+
+time :: entervalues()
+{
+	cout<<"Enter time:";
+	cout<<"\nHours?";
+	cin>>hr;
+	cout<<"\nMinutes?";
+	cin>>min;
+	cout<<"\nSeconds?";
+	cin>>sec;
+}
+
+time :: valueprocess()
+{
+	int hr_sec,min_sec;
+	hr_sec = hr*60*60;
+	min_sec = min*60;
+	total_sec = hr_sec + min_sec + sec;
+}
+
+time :: displaydata()
+{
+	cout<<"The time is = ";
+	cout<<hr<<":"<<min<<":"<<sec;
+	cout<<"\nTime in total seconds: "<<total_sec;
+}
+
+main()
+{
+	time t1;
+	t1.entervalues();
+	t1.valueprocess();
+	t1.displaydata();
+}
