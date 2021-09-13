@@ -21,9 +21,9 @@ int main()
     char dtype;
     cout<<"Enter the 'DATATYPE' whose size is to be determined(char,int,float,double): ";
     cin>>dtype;
-    if(dtype = 'int')
-    {
-    	cout<<"Size of int datatype = 4 bytes";
+        if(dtype = 'int')
+        {
+    	        cout<<"Size of int datatype = 4 bytes";
 	}
 	else if(dtype = 'char')
 	{
